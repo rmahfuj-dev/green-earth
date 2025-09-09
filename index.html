@@ -18,6 +18,8 @@
 </head>
 
 <body>
+  
+
     <header>
         <div class="navbar bg-green-700 shadow-sm text-white">
             <div class="navbar-start">
@@ -52,8 +54,9 @@
         </div>
     </header>
     <main>
+        
         <section
-            class="hero px-[3%] md:px-0 mx-auto bg-green-100  bg-[url('./assets/images/hero-leaf1.png')] bg-contain bg-center bg-no-repeat xl:bg-none">
+            class="hero px-[3%] 2xl:px-0 mx-auto bg-green-100  bg-[url('./assets/images/hero-leaf1.png')] bg-contain bg-center bg-no-repeat xl:bg-none">
             <div
                 class="hero-container flex justify-between py-[100px] items-center mx-auto  w-full flex-col xl:flex-row">
                 <img class="hero-left w-full max-w-[546px] object-contain hidden xl:block"
@@ -69,33 +72,33 @@
                     src="./assets/images/hero-leaf2.png" alt="">
             </div>
         </section>
-        <div class="sections-wrapper bg-green-50 py-[100px]">
+        <div class="sections-wrapper bg-green-50 py-[100px] px-[3%] 2xl:px-0">
             <h2 class="text-center heading2 mb-4">Choosse Your Trees</h2>
             <div class="section-wrapper-container max-w-[1650px] mx-auto grid grid-cols-1 xl:grid-cols-5">
 
                 <section class="category mr-[30px]">
-                    <p class="font-semibold text-[20px]">Categories</p>
-                    <ul class="category-list body1 flex flex-col justify-center ">
+                    <p class="font-semibold text-[20px] text-center xl:text-start">Categories</p>
+                    <ul
+                        class="category-list body1 flex flex-col justify-center items-center xl:items-start mb-8 xl:mb-0">
 
                     </ul>
                 </section>
                 <section class="plants col-span-3">
                     <div
-                        class="plants-wrapper grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 xl gap-[30px] place-items-center">
+                        class="plants-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl gap-[30px] place-items-center">
 
                     </div>
                 </section>
-                <section class="cart bg-white p-4 ml-[30px]">
+                <section class="cart bg-white p-4 ml-[30px] mt-8 xl:mt-0">
                     <p class="text-[20px] font-semibold mb-2">Your Cart</p>
-                    <ul class="wishlists">
-                        <li class="flex justify-between items-center px-3 py-2 bg-green-50 rounded-xl">
-                            <div class="product-name flex flex-col gap-1">
-                                <p class="font-semibold text-[14px]">Mango Tree</p>
-                                <p>$<span>500</span>x<span>1</span></p>
-                            </div>
-                            <div id="remove">x</div>
-                        </li>
+                    <ul class="wishlists flex flex-col justify-center items-center gap-4 border-b border-b-gray-200">
+                       
                     </ul>
+                    <div class="total flex justify-between">
+                        <p class="total">Total</p>
+                        <p class="amount">৳<span></span></p>
+                    </div>
+
                 </section>
             </div>
         </div>
@@ -167,6 +170,10 @@
             <p class="footer-text text-white body1 text-center">© 2025 Green Earth. All Rights Reserved.</p>
         </div>
     </footer>
+    <dialog id="my_modal_1" class="modal">
+  <div class="modal-box"></div>
+</dialog>
+
     <script src="script.js"></script>
 </body>
 
